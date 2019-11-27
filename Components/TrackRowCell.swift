@@ -11,12 +11,12 @@ import ColorToken
 import FontToken
 
 public struct TrackRowCell: View {
-    let heartFont = FontToken.heartFont()
-    let catFont = FontToken.catFont()
     let heart: CTFont
     let cat: CTFont
 
     public init() {
+        let heartFont = FontToken.heartFont()
+        let catFont = FontToken.catFont()
         heart = unsafeBitCast(self.heartFont, to: CTFont.self)
         cat = unsafeBitCast(self.catFont, to: CTFont.self)
         heartFont?.release()

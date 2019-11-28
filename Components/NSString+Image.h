@@ -3,7 +3,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- The @c Image category on @c NSString 
+ The Image category on NSString
  */
 @interface NSString (Image)
 

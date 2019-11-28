@@ -17,8 +17,8 @@ public struct TrackRowCell: View {
     public init() {
         let heartFont = FontToken.heartFont()
         let catFont = FontToken.catFont()
-        heart = unsafeBitCast(self.heartFont, to: CTFont.self)
-        cat = unsafeBitCast(self.catFont, to: CTFont.self)
+        heart = unsafeBitCast(heartFont, to: CTFont.self)
+        cat = unsafeBitCast(catFont, to: CTFont.self)
         heartFont?.release()
         catFont?.release()
     }
